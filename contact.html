@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact &amp; Free Quote | L.I. Lawn Service LLC</title>
+<meta name="description" content="Request a free quote from L.I. Lawn Service LLC, serving Huntington, East Northport, Commack, and Kings Park, NY. Call or text (631) 678-6491." />
+<link rel="icon" href="favicon.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="logo-chip"><img class="logo-mark" src="logo.png" alt="L.I. Lawn Service LLC - Huntington, East Northport, Commack, Kings Park" /></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:6316786491" class="header-phone">&#128222; (631) 678-6491</a>
+      <a href="contact.html" class="btn btn-accent">Get a Free Quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="background: rgba(255,255,255,0.12); color: #fff;">Contact</span>
+    <h1>Get your free quote</h1>
+    <p>Fill out the form and Aidan will call or text you back, usually the same day.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <div>
+        <div class="info-card">
+          <h3>Get in touch</h3>
+          <div class="info-row">
+            <div class="icon">&#128222;</div>
+            <div>
+              <strong>Call or Text</strong>
+              <p><a href="tel:6316786491" style="color:#fff;">(631) 678-6491</a></p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="icon">&#9993;&#65039;</div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:aidanmacartney28@gmail.com" style="color:#fff;">aidanmacartney28@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="icon">&#128205;</div>
+            <div>
+              <strong>Service Area</strong>
+              <p>Huntington, East Northport, Commack &amp; Kings Park, NY</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="icon">&#128337;</div>
+            <div>
+              <strong>Response Time</strong>
+              <p>Most quote requests answered same day</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-block">
+          <iframe
+            src="https://www.google.com/maps?q=Huntington,East+Northport,Commack,Kings+Park+NY&output=embed"
+            loading="lazy"
+            title="L.I. Lawn Service coverage area map"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <form class="quote-form" id="quoteForm">
+        <h3 style="margin-bottom: 18px;">Request a Free Quote</h3>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(631) 555-0123" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" />
+        </div>
+
+        <div class="field">
+          <label for="address">Property Address</label>
+          <input type="text" id="address" name="address" required placeholder="Street, Town" />
+        </div>
+
+        <div class="field">
+          <label>Services Interested In</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="service" value="Weekly Lawn Maintenance" /> Weekly Lawn Maintenance</label>
+            <label><input type="checkbox" name="service" value="Seasonal Yard Cleanups" /> Seasonal Yard Cleanups</label>
+            <label><input type="checkbox" name="service" value="Mulching" /> Mulching</label>
+            <label><input type="checkbox" name="service" value="Weeding" /> Weeding</label>
+            <label><input type="checkbox" name="service" value="Plant Bed Re-Designing" /> Plant Bed Re-Designing</label>
+            <label><input type="checkbox" name="service" value="Shrub & Hedge Trimming" /> Shrub &amp; Hedge Trimming</label>
+            <label><input type="checkbox" name="service" value="Power Washing" /> Power Washing</label>
+            <label><input type="checkbox" name="service" value="Window Cleaning" /> Window Cleaning</label>
+            <label><input type="checkbox" name="service" value="Other" id="otherService" /> Other</label>
+          </div>
+        </div>
+
+        <div class="field" id="otherServiceField" style="display:none;">
+          <label for="otherServiceText">What else do you need?</label>
+          <input type="text" id="otherServiceText" name="otherServiceText" placeholder="Tell us what you're looking for" />
+        </div>
+
+        <div class="field">
+          <label for="details">Anything else we should know?</label>
+          <textarea id="details" name="details" rows="4" placeholder="Property size, timing, specific requests..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-accent btn-block">Send Quote Request</button>
+        <p class="form-note">Submitting opens your email app pre-filled with your request, sent directly to Aidan. Prefer to talk? Call/text (631) 678-6491.</p>
+        <div id="formStatus"></div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="logo-mark" src="logo.png" alt="L.I. Lawn Service LLC - Huntington, East Northport, Commack, Kings Park" />
+        </div>
+        <p>Reliable lawn care and property maintenance across Huntington, East Northport, Commack, and Kings Park, NY.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6316786491">(631) 678-6491</a></li>
+          <li><a href="mailto:aidanmacartney28@gmail.com">aidanmacartney28@gmail.com</a></li>
+          <li>Huntington &middot; East Northport<br>Commack &middot; Kings Park, NY</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> L.I. Lawn Service LLC. All rights reserved.</span>
+      <span>Site built for Aidan Macartney</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:6316786491" class="btn btn-outline btn-block" style="border-color: var(--green); color: #fff; background: var(--green);">Call Now</a>
+  <a href="contact.html" class="btn btn-accent btn-block">Free Quote</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
